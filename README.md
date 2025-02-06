@@ -11,3 +11,4 @@ automatically builds and deploys using [bret comnes' deploy-to-neocities tool](h
 # TODO
 * set up collage posts and monthly sorting
 * cursor project in subdomain
+* figure out subdomains for varying projects
