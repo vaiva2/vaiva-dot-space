@@ -1,7 +1,6 @@
 a personal webpage using 11ty as a static-site generator. deploys to [vaiva.space](https://vaiva.space.com).
 
 # REFERENCES
-***
 hosted on [neocities](https://neocities.org/)
 
 based off of [flamed fury's 11ty guide](https://flamedfury.com/guides/11ty-homepage-neocities/)
