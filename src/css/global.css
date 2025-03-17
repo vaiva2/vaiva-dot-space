@@ -5,6 +5,7 @@
     --text: #1f1f1f;
     --gray: #978b8b;
     --link: #2919db;
+    --accent: #9fbdff;
   
     /* TYPOGRAPHY */
     --garamond: "Cormorant Garamond", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
@@ -29,7 +30,7 @@
     font-size: 1rem;
     color: var(--text);
     font-family: var(--garamond);
-    background-image: url("../img/DSC05087.JPEG");
+    background-image: url("../img/IMG_8172.JPEG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,4 +94,10 @@
     vertical-align: top;
     color: var(--gray);
     font-family:var(--mono-font);
+  }
+
+  hr.sep-by-dots {
+    margin: 2.3rem 0;
+    border-top: 1px dashed;
+    color: var(--accent);
   }
