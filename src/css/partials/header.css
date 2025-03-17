@@ -44,6 +44,9 @@
 
           a > span {
             text-transform: uppercase;
+            font-style: italic;
+            letter-spacing: 0.0875rem;
+            color: var(--text);
           }
 
           a > span.left {
@@ -53,14 +56,15 @@
 
           a > span.right {
             margin-left: 25rem;
-            transform: translateY(-1.3rem);
+            transform: translateY(-1.2rem);
             background-color: yellow;
             padding: 0 1.5rem;
+            
           }
 
           a > span.down {
-            margin-left: -10rem;
-            transform: translateY(3.5rem);
+            margin-left: -2rem;
+            transform: translateY(2rem);
           }
         }
 
