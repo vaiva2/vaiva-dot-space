@@ -1,0 +1,81 @@
+/* COLOR PALETTE + TYPOGRAPHY */
+:root {
+    --bg: #fff;
+    --text: #1f1f1f;
+    --gray: #978b8b;
+  
+    --garamond: "Cormorant Garamond", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+      "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica,
+      "Helvetica Neue", sans-serif;
+    --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+}
+    
+/* MAIN WRAPPERS */
+:root {
+  * {
+    box-sizing: border-box;
+  }
+
+  
+  html {
+    font-family: var(--garamond);
+    scroll-behavior: smooth;
+    font-size: 1rem;
+    background-color: var(--bg);
+    color: var(--text);
+
+    @media only screen and (max-width: 800px) {
+      font-size: 1rem;
+    }
+  }
+
+  body {
+    display: flex;
+    max-width: 90rem;
+    margin: 0 auto;
+    gap: 1.5rem;
+
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width: 800px) {
+      padding: 2rem 1.5rem;
+      gap: 0.875rem;
+    }
+
+    @media only screen and (max-width: 450px) {
+      padding: 2rem 1rem;
+    }
+  }
+
+  main {
+    width: 100%;
+
+    ul.intro {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+}
+    
+/* BASE ELEMENTS */
+:root {
+  ul, ol {
+    padding: 0;
+    margin: 0;
+  }
+}
+  
+/* CUSTOM CLASSES */
+:root {
+  span.super-text {
+    font-size: 0.65rem;
+    font-weight: normal;
+    vertical-align: top;
+    color: var(--gray);
+    font-family:'Courier New', Courier, monospace;
+  }
+}
