@@ -1,28 +1,39 @@
-/* COLOR PALETTE + TYPOGRAPHY */
+/* GLOBAL VARIABLES */
 :root {
+  /* COLOR PALETTE */
     --bg: #fff;
     --text: #1f1f1f;
     --gray: #978b8b;
+    --link: #2919db;
   
+    /* TYPOGRAPHY */
     --garamond: "Cormorant Garamond", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
       "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica,
       "Helvetica Neue", sans-serif;
+      /* TODO: custom mono font */
     --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+
+    /* MISCELLANEOUS */
+    --global-vert-padding: 3rem 1.5rem;
+
 }
     
 /* MAIN WRAPPERS */
-:root {
   * {
     box-sizing: border-box;
   }
 
   
   html {
-    font-family: var(--garamond);
     scroll-behavior: smooth;
     font-size: 1rem;
-    background-color: var(--bg);
     color: var(--text);
+    font-family: var(--garamond);
+    background-image: url("../img/DSC05087.JPEG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     @media only screen and (max-width: 800px) {
       font-size: 1rem;
@@ -33,7 +44,8 @@
     display: flex;
     max-width: 90rem;
     margin: 0 auto;
-    gap: 1.5rem;
+    gap: 20%;
+    padding: 0 3rem;
 
     @media only screen and (max-width: 1000px) {
       flex-direction: column;
@@ -50,32 +62,35 @@
   }
 
   main {
-    width: 100%;
-
-    ul.intro {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
+    width: 80%;
+    padding: var(--global-vert-padding);
+    background-color: var(--bg);
   }
-}
     
 /* BASE ELEMENTS */
-:root {
   ul, ol {
-    padding: 0;
-    margin: 0;
+    list-style: none;
+    padding: unset;
+    margin: unset;
   }
-}
+
+  h1, h2, h3, h4, h5, h6, h7 {
+    margin: unset;
+    padding: unset;
+  }
+
+  a {
+    color: var(--link);
+    text-decoration: none;
+    font-family: var(--mono-font);
+    font-size: 0.8rem;
+  }
   
 /* CUSTOM CLASSES */
-:root {
   span.super-text {
     font-size: 0.65rem;
     font-weight: normal;
     vertical-align: top;
     color: var(--gray);
-    font-family:'Courier New', Courier, monospace;
+    font-family:var(--mono-font);
   }
-}
