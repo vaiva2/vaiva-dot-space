@@ -30,11 +30,6 @@
     font-size: 1rem;
     color: var(--text);
     font-family: var(--garamond);
-    background-image: url("../img/IMG_8172.JPEG");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 
     @media only screen and (max-width: 800px) {
       font-size: 1rem;
@@ -42,6 +37,10 @@
   }
 
   body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     max-width: 90rem;
     margin: 0 auto;
