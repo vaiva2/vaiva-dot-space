@@ -1,0 +1,102 @@
+/* GLOBAL VARIABLES */
+:root {
+  /* COLOR PALETTE */
+    --bg: #fff;
+    --text: #1f1f1f;
+    --gray: #978b8b;
+    --link: #2919db;
+    --accent: #9fbdff;
+  
+    /* TYPOGRAPHY */
+    --garamond: "Cormorant Garamond", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+      "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica,
+      "Helvetica Neue", sans-serif;
+      /* TODO: custom mono font */
+    --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+
+    /* MISCELLANEOUS */
+    --global-vert-padding: 3rem 1.5rem;
+
+}
+    
+/* MAIN WRAPPERS */
+  * {
+    box-sizing: border-box;
+  }
+
+  
+  html {
+    scroll-behavior: smooth;
+    font-size: 1rem;
+    color: var(--text);
+    font-family: var(--garamond);
+
+    @media only screen and (max-width: 800px) {
+      font-size: 1rem;
+    }
+  }
+
+  body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    max-width: 90rem;
+    margin: 0 auto;
+    gap: 20%;
+    padding: 0 3rem;
+
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width: 800px) {
+      padding: 2rem 1.5rem;
+      gap: 0.875rem;
+    }
+
+    @media only screen and (max-width: 450px) {
+      padding: 2rem 1rem;
+    }
+  }
+
+  main {
+    width: 80%;
+    padding: var(--global-vert-padding);
+    background-color: var(--bg);
+  }
+    
+/* BASE ELEMENTS */
+  ul, ol {
+    list-style: none;
+    padding: unset;
+    margin: unset;
+  }
+
+  h1, h2, h3, h4, h5, h6, h7 {
+    margin: unset;
+    padding: unset;
+  }
+
+  a {
+    color: var(--link);
+    text-decoration: none;
+    font-family: var(--mono-font);
+    font-size: 0.8rem;
+  }
+  
+/* CUSTOM CLASSES */
+  span.super-text {
+    font-size: 0.65rem;
+    font-weight: normal;
+    vertical-align: top;
+    color: var(--gray);
+    font-family:var(--mono-font);
+  }
+
+  hr.sep-by-dots {
+    margin: 2.3rem 0;
+    border-top: 1px dashed;
+    color: var(--accent);
+  }

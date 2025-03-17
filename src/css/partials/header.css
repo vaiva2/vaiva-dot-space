@@ -1,0 +1,89 @@
+ header {
+    width: 100%;
+    max-width: 17rem;
+    min-width: 17rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding:var(--global-vert-padding);
+    background-color: var(--bg);
+
+    @media only screen and (max-width: 1000px) {
+      width: 100%;
+      min-width: unset;
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 5rem;
+      font-weight: 200;
+
+      span.navn {
+        font-weight: 1000;
+      }
+    }
+
+    nav.main-nav > ul {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5rem;
+      width: 100%;
+      gap: 0.75rem;
+      
+      li {
+        width: 100%;
+
+        &:hover {
+          a {
+            background-color: yellow;
+          }
+
+          a > span {
+            text-transform: uppercase;
+            font-style: italic;
+            letter-spacing: 0.0875rem;
+            color: var(--text);
+          }
+
+          a > span.left {
+            margin-left: -10rem;
+            transform: translateY(-6rem);
+          }
+
+          a > span.right {
+            margin-left: 25rem;
+            transform: translateY(-1.2rem);
+            background-color: yellow;
+            padding: 0 1.5rem;
+            
+          }
+
+          a > span.down {
+            margin-left: -2rem;
+            transform: translateY(2rem);
+          }
+        }
+
+        a {
+          display: flex;
+          width: 100%;
+         
+        }
+
+        a > span {
+          text-align: right;
+          width: 100%;
+          display: inline-block;
+          /* transition: transform 1s; */
+          font-size: 0.875rem;
+          font-family: var(--mono-font);
+          line-height: 1.875;
+          padding-right: 0.25rem;
+        }
+      }
+    }
+  }
