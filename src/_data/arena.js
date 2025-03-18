@@ -7,7 +7,8 @@ module.exports = async function () {
     if (!response.ok) throw new Error("Failed to fetch Are.na data");
 
     const data = await response.json();
-    console.log("Are.na API Data:", data); // ✅ Check raw API response
+    // uncomment for troubleshooting
+    // console.log("Are.na API Data:", data);
 
     const images = data.contents
       .filter((item) => item.class === "Image" && item.image?.original?.url)
