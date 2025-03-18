@@ -62,7 +62,7 @@
   }
 
   main {
-    width: 80%;
+    width: 70%;
     padding: var(--global-vert-padding);
     background-color: var(--bg);
   }
