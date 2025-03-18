@@ -14,21 +14,16 @@ layout: /layouts/base.njk
 
 <hr class="sep-by-dots" />
 
-<!-- left sidebar
- sticky scroll
-
- top: 
- vaiva staugaityte
- cph
-
- bottom: 
- email
- are.na
- linkedin
-
- -->
-
- <!-- center
-   -->
-
+<div class="bear-blog">
+  <h2>lille snakke</h2>
+  <ul>
+    {% for post in bearblog %}
+    <li>
+        <p class="date">{{ post.date | date: "%d-%m-%Y" }}</p>
+        <p>{{post.content}}</p>
+        <p class="dots">...</p>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
    

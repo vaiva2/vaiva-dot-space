@@ -12,6 +12,7 @@
   "type": "commonjs",
   "description": "",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "rss-parser": "^3.13.0"
   }
 }
