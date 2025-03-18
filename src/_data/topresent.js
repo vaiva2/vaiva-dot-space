@@ -6,7 +6,7 @@ module.exports = async function () {
         const feed = await parser.parseURL('https://2025present.bearblog.dev/feed/?type=rss');
         
         // Uncomment for troubleshooting
-        console.log("Fetched posts:", feed.items.slice(0,1));
+        // console.log("Fetched posts:", feed.items.slice(0,1));
 
         return feed.items.slice(0,1).map(post => ({
             title: post.title,
