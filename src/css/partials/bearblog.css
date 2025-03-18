@@ -1,5 +1,13 @@
 section.bear-blog {
-  
+  margin-top: 3rem;
+  height: 100%;
+  padding: 1rem;
+  overflow-y: scroll;
+  border: 1px dashed var(--link);
+  background-color: var(--bear-blog);
+  font-size: 0.7rem;
+  font-weight: 200;
+  font-family: var(--sans-font);
 
     h2 {
       font-family: var(--sans-font);
@@ -9,8 +17,9 @@ section.bear-blog {
     }
   
     h3 {
-      font-size: 1rem;
+      font-size: 0.7rem;
       font-style: italic;
+      margin-bottom: 0.25rem;
     }
   
     ul {
@@ -26,24 +35,35 @@ section.bear-blog {
     
     .date {
         text-align: right;
+        font-style: italic;
     }
   
     .dots {
       text-align: center;
       margin: 0.5rem 0;
     }
+  }
 
-    li:last-child .dots {
-        display: none;
-    }
+  a.mere-snakke {
+    display: flex;
+    justify-self: center;
+    padding: 0.35rem 2rem;
+    height: 4.5rem;
+    width: 80%;
+    margin: 1rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed var(--link);
+    border-radius: 2rem;
+    background-color: var(--bear-blog);
 
-    a.special-link {
-      margin-top: 3rem;
-      border: 1px dashed var(--link);
-      border-radius: 2rem;
-
-      &:hover {
-        border-color: var(--text);
-      }
+    &:hover {
+      letter-spacing: 0.0875rem;
+      text-transform: uppercase;
+      font-family: var(--sans-font);
+      font-style: italic;
+      color: var(--text);
+      border-color: var(--text);
     }
   }

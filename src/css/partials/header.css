@@ -10,6 +10,8 @@
     top: 0;
     padding:var(--global-vert-padding);
     background-color: var(--bg);
+    opacity: var(--global-opacity);
+    z-index: 2;
 
     @media only screen and (max-width: 1000px) {
       width: 100%;
