@@ -4,21 +4,22 @@ const API_URL = `https://api.are.na/v2/channels/${CHANNEL_NAME}?per=100`;
 module.exports = async function () {
   try {
     const response = await fetch(API_URL);
+    if (!response.ok) throw new Error("Failed to fetch Are.na data");
+
     const data = await response.json();
+    console.log("Are.na API Data:", data); // ✅ Check raw API response
 
-    console.log("Are.na data fetched successfully:");
-
-    // get only images
-    return data.contents
-      .filter((item) => item.class === "Image")
-      .slice(0, 1)
+    const images = data.contents
+      .filter((item) => item.class === "Image" && item.image?.original?.url)
       .map((item) => ({
-        title: item.title,
-        imageUrl: item.image.original.url,
+        title: item.title || "Untitled",
+        imageUrl: item.image.original.url
       }));
+      
+    return images;
+
   } catch (error) {
     console.error("Error fetching Are.na data:", error);
     return [];
   }
 };
-

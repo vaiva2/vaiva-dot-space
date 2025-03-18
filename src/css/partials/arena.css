@@ -1,0 +1,15 @@
+.arena-post {
+    width: 17rem;
+    height: 17rem;
+    display: flex;
+    opacity: 40%;
+    position: absolute;
+    top: 53%;
+    left: 30%;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
