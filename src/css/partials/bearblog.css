@@ -1,6 +1,7 @@
 section.bear-blog {
   margin-top: 3rem;
   height: 100%;
+  width: 50%;
   padding: 1rem;
   overflow-y: scroll;
   border: 1px dashed var(--link);
