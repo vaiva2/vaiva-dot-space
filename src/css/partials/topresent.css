@@ -1,0 +1,15 @@
+section.to-present {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -1rem;
+    font-family: var(--sans-font);
+
+    img {
+        max-width: 100%;
+        display: flex;
+    }
+
+    .date {
+        text-transform: lowercase;
+    }
+}
