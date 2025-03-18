@@ -20,29 +20,22 @@ section.bear-blog {
     p {
       margin: 0;
     }
-  
+
+    
     .date {
-      text-align: right;
+        text-align: right;
     }
   
     .dots {
       text-align: center;
       margin: 0.5rem 0;
     }
-  
-    a.mere-snakke {
-      display: flex;
-      justify-self: center;
-      margin-top: 1rem;
-  
-      &:hover {
-        letter-spacing: 0.0875rem;
-        text-transform: uppercase;
-        font-family: var(--sans-font);
-        font-style: italic;
-        background-color: var(--yellow);
-        padding: 0.35rem 2rem;
-        margin-bottom: -0.7rem;
-      }
+
+    li:last-child .dots {
+        display: none;
+       }
+
+    a.special-link:hover {
+      margin-bottom: -0.7rem;
     }
   }
