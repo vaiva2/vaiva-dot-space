@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/css/partials/bearblog.css">
 
 <section class="bear-blog">
-  <h2>lille snakke <a class="super-text">(tryk for mere)</a></h2>
+  <h2>lille snakke <a class="super-text" href="https://snakke.vaiva.space/">(<span class="tryk">tryk</span> for mere)</a></h2>
 
   <ul>
     {% for post in bearblog %}
@@ -9,7 +9,7 @@
           <p class="date">{{ post.date | date: "%d.%m.%Y" }}</p>
           <h3>{{post.title}}</h3>
           <p>{{post.content}}</p>
-          <p class="dots">...</p>
+          <p class="dots">~*~</p>
       </li>
   {% endfor %}
   </ul>
