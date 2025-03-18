@@ -1,3 +1,14 @@
+table.directory {
+    th.left-align {
+        text-align: left;
+    }
+
+    td,
+    th {
+        padding: 0.2rem 0.75rem;
+    }
+}
+
 .color-block {
     height: 1rem;
     width: 1rem;
