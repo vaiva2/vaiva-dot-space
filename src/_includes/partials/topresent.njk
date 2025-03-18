@@ -4,7 +4,7 @@
     <ul>
         {% for post in topresent %}
               <li>
-                 <p class="date">kamera den {{ post.date }}</p>
+                 <h2 class="date">kamera den {{ post.date }}</p>
                  <div>{{ post.content | safe }}</div>
               </li>
           {% endfor %}

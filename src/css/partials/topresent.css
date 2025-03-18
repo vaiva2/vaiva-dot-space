@@ -2,14 +2,17 @@ section.to-present {
     display: flex;
     flex-direction: column;
     margin: 0 -1rem;
-    font-family: var(--sans-font);
+   
 
     img {
         max-width: 100%;
         display: flex;
+        border: 1px dashed var(--link);
     }
 
-    .date {
-        text-transform: lowercase;
+    h2 {
+        font-family: var(--sans-font);
+        font-size: 1rem;
+        font-weight: 200;
     }
 }
