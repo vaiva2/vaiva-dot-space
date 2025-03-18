@@ -56,7 +56,7 @@
           }
 
           a > span.right {
-            margin-left: 27rem;
+            margin-left: 21rem;
             transform: translateY(-1.2rem);
             background-color: var(--yellow);
             padding: 0 2rem;

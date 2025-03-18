@@ -20,6 +20,9 @@
   <header>{% include '../partials/header.njk' %}</header>
 
   <main>
-    {{ content | safe }}
+    <section class='main-content'>{{ content | safe }}</section>
+
+    {% include '../partials/sidebar.njk' %}
   </main>
+
 </body>

@@ -44,7 +44,7 @@
     display: flex;
     max-width: 90rem;
     margin: 0 auto;
-    gap: 20%;
+    gap: 15%;
     padding: 0 3rem;
 
     @media only screen and (max-width: 1000px) {
@@ -62,9 +62,18 @@
   }
 
   main {
-    width: 70%;
-    padding: var(--global-vert-padding);
-    background-color: var(--bg);
+    display: flex;
+    gap: 2%;
+
+    &:last-child {
+      flex: 1;
+    }
+
+    section.main-content {
+      flex: 1.2;
+      padding: var(--global-vert-padding);
+      background-color: var(--bg);
+    }
   }
     
 /* BASE ELEMENTS */

@@ -15,20 +15,7 @@ layout: /layouts/base.njk
 
 <hr class="sep-by-dots" />
 
-<section class="bear-blog">
-  <h2>lille snakke</h2>
-  <ul>
-    {% for post in bearblog %}
-    <li>
-        <p class="date">{{ post.date | date: "%d-%m-%Y" }}</p>
-        <h3>{{post.title}}</h3>
-        <p>{{post.content}}</p>
-        <p class="dots">...</p>
-    </li>
-  {% endfor %}
-  </ul>
-  <a class="special-link" href="https://vaiva.bearblog.dev/">*~ *~ *~ mere snakke, tak ~* ~* ~*</a>
-</section>
+{% include "partials/bearblog.njk" %}
 
 <hr class="sep-by-dots" />
    
