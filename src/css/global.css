@@ -117,3 +117,18 @@
     border-top: 1px dashed;
     color: var(--link);
   }
+
+  a.link {
+    &:hover {
+      background-color: var(--yellow);
+      letter-spacing: 0.8;
+      font-style: italic;
+      color: var(--text);
+      font-family: var(--sans-font);
+      padding: 0.1rem 0.8rem;
+    }
+  }
+
+  .ghost {
+    opacity: 0;
+  }
