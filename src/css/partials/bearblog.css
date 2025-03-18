@@ -1,0 +1,47 @@
+section.bear-blog {
+    h2 {
+      font-family: var(--sans-font);
+      font-size: 1rem;
+      font-weight: 200;
+      text-align: center;
+    }
+  
+    h3 {
+      font-size: 1rem;
+      font-style: italic;
+    }
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  
+    p {
+      margin: 0;
+    }
+  
+    .date {
+      text-align: right;
+    }
+  
+    .dots {
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+  
+    a.mere-snakke {
+      display: flex;
+      justify-self: center;
+      margin-top: 1rem;
+  
+      &:hover {
+        letter-spacing: 0.0875rem;
+        text-transform: uppercase;
+        font-family: var(--sans-font);
+        font-style: italic;
+        background-color: var(--yellow);
+        padding: 0.35rem 2rem;
+      }
+    }
+  }
