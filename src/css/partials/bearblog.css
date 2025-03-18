@@ -42,6 +42,7 @@ section.bear-blog {
         font-style: italic;
         background-color: var(--yellow);
         padding: 0.35rem 2rem;
+        margin-bottom: -0.7rem;
       }
     }
   }
