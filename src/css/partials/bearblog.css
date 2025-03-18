@@ -1,4 +1,6 @@
 section.bear-blog {
+  
+
     h2 {
       font-family: var(--sans-font);
       font-size: 1rem;
@@ -33,9 +35,15 @@ section.bear-blog {
 
     li:last-child .dots {
         display: none;
-       }
+    }
 
-    a.special-link:hover {
-      margin-bottom: -0.7rem;
+    a.special-link {
+      margin-top: 3rem;
+      border: 1px dashed var(--link);
+      border-radius: 2rem;
+
+      &:hover {
+        border-color: var(--text);
+      }
     }
   }

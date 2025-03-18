@@ -51,7 +51,7 @@
           }
 
           a > span.left {
-            margin-left: -10rem;
+            margin-left: -9rem;
             transform: translateY(-10rem);
           }
 
@@ -66,6 +66,11 @@
           a > span.down {
             margin-left: -2rem;
             transform: translateY(2rem);
+          }
+
+          a > span.up {
+            margin-left: 2rem;
+            transform: translateY(-9rem);
           }
         }
 

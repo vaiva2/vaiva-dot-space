@@ -26,6 +26,7 @@
 
   
   html {
+    overflow-y: hidden;
     scroll-behavior: smooth;
     font-size: 1rem;
     color: var(--text);
@@ -73,6 +74,8 @@
       flex: 1.2;
       padding: var(--global-vert-padding);
       background-color: var(--bg);
+      overflow-y: scroll;
+      height: 100vh;
     }
   }
     
@@ -114,6 +117,12 @@
     display: flex;
     justify-self: center;
     margin-top: 1rem;
+    padding: 0.35rem 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
     &:hover {
       letter-spacing: 0.0875rem;
@@ -121,7 +130,6 @@
       font-family: var(--sans-font);
       font-style: italic;
       background-color: var(--yellow);
-      padding: 0.35rem 2rem;
       color: var(--text);
     }
   }
