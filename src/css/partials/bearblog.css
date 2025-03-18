@@ -1,7 +1,7 @@
 section.bear-blog {
-  margin-top: 3rem;
   height: 100%;
-  width: 50%;
+  width: 76%;
+  margin: 3rem 0 0 auto;
   padding: 1rem;
   overflow-y: scroll;
   border: 1px dashed var(--link);
@@ -21,6 +21,8 @@ section.bear-blog {
       font-size: 0.7rem;
       font-style: italic;
       margin-bottom: 0.25rem;
+      font-weight: 200;
+      margin-left: 1.2rem;
     }
   
     ul {

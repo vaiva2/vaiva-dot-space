@@ -6,9 +6,9 @@ module.exports = async function () {
         const feed = await parser.parseURL('https://vaiva.bearblog.dev/feed/?type=rss');
         
         // Uncomment for troubleshooting
-        // console.log("Fetched posts:", feed.items.slice(0,5));
+        // console.log("Fetched posts:", feed.items.slice(0, 3));
 
-        return feed.items.slice(0,5).map(post => ({
+        return feed.items.slice(0, 10).map(post => ({
             title: post.title,
             date: post.pubDate,
             content: post.contentSnippet || post.content
