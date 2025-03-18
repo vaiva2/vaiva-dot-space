@@ -10,6 +10,8 @@
     top: 0;
     padding:var(--global-vert-padding);
     background-color: var(--bg);
+    opacity: var(--global-opacity);
+    z-index: 2;
 
     @media only screen and (max-width: 1000px) {
       width: 100%;
@@ -51,12 +53,17 @@
           }
 
           a > span.left {
-            margin-left: -10rem;
+            margin-left: -9rem;
             transform: translateY(-10rem);
           }
 
+          a > span.left-v2 {
+            margin-left: -5rem;
+            transform: translateY(-1rem);
+          }
+
           a > span.right {
-            margin-left: 27rem;
+            margin-left: 21rem;
             transform: translateY(-1.2rem);
             background-color: var(--yellow);
             padding: 0 2rem;
@@ -65,7 +72,12 @@
 
           a > span.down {
             margin-left: -2rem;
-            transform: translateY(2rem);
+            transform: translateY(3rem);
+          }
+
+          a > span.up {
+            margin-left: 2rem;
+            transform: translateY(-9rem);
           }
         }
 

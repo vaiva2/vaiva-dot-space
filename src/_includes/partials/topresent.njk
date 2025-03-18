@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/css/partials/topresent.css">
+
+<section class="to-present">
+    <ul>
+        {% for post in topresent %}
+              <li>
+                 <h2 class="date">kamera den {{ post.date }}</p>
+                 <div>{{ post.content | safe }}</div>
+              </li>
+          {% endfor %}
+    </ul>
+</section>

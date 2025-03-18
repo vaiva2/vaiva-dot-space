@@ -1,0 +1,7 @@
+section.sidebar {
+   background-color: var(--bg); 
+   width: 30%;
+   height: 100vh;
+   padding: var(--global-vert-padding);
+   position: sticky;
+}

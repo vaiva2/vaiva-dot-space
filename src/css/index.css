@@ -2,33 +2,6 @@ ul.intro {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.5rem;
+    margin-bottom: auto;
   }
-
-.bear-blog {
-  h2 {
-    font-family: var(--sans-font);
-    font-size: 1rem;
-    font-weight: 200;
-    text-align: center;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .date {
-    text-align: right;
-  }
-
-  .dots {
-    text-align: center;
-    margin: 0.5rem 0;
-  }
-}
