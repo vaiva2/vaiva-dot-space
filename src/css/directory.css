@@ -3,6 +3,10 @@ table.directory {
         text-align: left;
     }
 
+    td.center-align {
+        text-align: center;
+    }
+
     td,
     th {
         padding: 0.2rem 0.75rem;
