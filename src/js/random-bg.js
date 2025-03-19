@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "DSC05650.JPEG",
     "DSC05751.JPEG",
     "DSC05761.JPEG",
-    "IMG_8132.JPEG",
     "IMG_8172.JPEG"
   ];
   
