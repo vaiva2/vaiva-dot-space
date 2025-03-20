@@ -1,3 +1,13 @@
----
-layout: /layouts/base.njk
----
+<section class="site-spirit">
+    <p id="site-age">site age: </p>
+</section>
+
+<script>
+    let currentDate = new Date();
+    const siteBirthDate = new Date('2025-03-17')
+
+    let differenceInMilliseconds = Math.abs(currentDate - siteBirthDate);
+    var differenceInDays = Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24)); // convert milliseconds to days
+
+    document.getElementById("site-age").innerHTML += differenceInDays + " days";
+</script>
