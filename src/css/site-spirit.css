@@ -2,13 +2,46 @@ body {
     background-color: #FAFAFA;
     color: #000;
     font-family: "Source Code Pro", Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    text-align: right;
+    overflow: hidden;
+    padding: 1rem;
 }
+
+section.site-spirit {
+    width: 90vw;
+    height: 90vh;
+}
+
+#site-age,
+#feeling,
+#thought,
+#return-to-home {
+    position: absolute;
+}
+
+#site-age {
+    top: 11%;
+    right: 15%;
+}
+
+#feeling {
+    bottom: 53%;
+    left: 5%;
+}
+
+#thought {
+    right: 40%;
+    top: 14%;
+    width: 20rem;
+}
+
 
 .spirit-map {
     width: 110%;
     position: fixed;
     bottom: -95%;
     right: -5%;
+    z-index: -1;
 
     img {
         width: 100%;
