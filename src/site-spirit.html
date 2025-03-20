@@ -1,3 +1,27 @@
----
-layout: /layouts/base.njk
----
+<link rel="stylesheet" href="/css/site-spirit.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+<section class="site-spirit">
+    <p id="site-age"><em>site age:</em> </p>
+    <p id="feeling"><em>feeling:</em> inspired</p>
+    <p id="thought"><em>thought:</em> when was the last time you checked your console logs?</p>
+    <br />
+    <p id="return-to-home">return to <a href="/">home</a></p>
+
+    <div class="spirit-map">
+        <img src="/img/spirit.jpg" alt="Spirit map" />
+    </div>
+</section>
+
+<script>
+    let currentDate = new Date();
+    const siteBirthDate = new Date('2025-03-17')
+
+    let differenceInMilliseconds = Math.abs(currentDate - siteBirthDate);
+    var differenceInDays = Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24)); // convert milliseconds to days
+
+    document.getElementById("site-age").innerHTML += differenceInDays + " days";
+</script>
