@@ -31,9 +31,6 @@ jobs:
           git add .
           git commit -m "Automated Eleventy Build [skip ci]" || exit 0
           git push
-        
-      - name: Install Neocities CLI
-        run: npm install -g neocities
 
       - name: Deploy to Neocities
         env:
