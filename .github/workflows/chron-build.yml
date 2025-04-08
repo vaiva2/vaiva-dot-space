@@ -21,20 +21,6 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build Eleventy
-        run: npx @11ty/eleventy
-
-      - name: Deploy (Optional)
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add .
-          git commit -m "Automated Eleventy Build [skip ci]" || exit 0
-          git push
-
-      - name: Deploy to Neocities
-        env:
-          NEOCITIES_API_KEY: ${{ secrets.NEOCITIES_API_TOKEN }}
-        run: |
-          neocities push _site --key $NEOCITIES_API_KEY
+      - name: Run Eleventy Build
+        run: npm run build
 
