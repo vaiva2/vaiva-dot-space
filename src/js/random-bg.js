@@ -1,24 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
   const images = [
-    "DSC05087.JPEG",
-    "DSC05213.JPEG",
-    "DSC05224.JPEG",
-    "DSC05225.JPEG",
-    "DSC05226.JPEG",
-    "DSC05310.JPEG",
-    "DSC05332.JPEG",
-    "DSC05421.JPEG",
-    "DSC05423.JPEG",
-    "DSC05450.JPEG",
-    "DSC05457.JPEG",
-    "DSC05482.JPEG",
-    "DSC05502.JPEG",
-    "DSC05538.JPEG",
-    "DSC05637.JPEG",
-    "DSC05650.JPEG",
-    "DSC05751.JPEG",
-    "DSC05761.JPEG",
-    "IMG_8172.JPEG"
+    "DSC05087.webp",
+    "DSC05213.webp",
+    "DSC05224.webp",
+    "DSC05225.webp",
+    "DSC05226.webp",
+    "DSC05310.webp",
+    "DSC05332.webp",
+    "DSC05421.webp",
+    "DSC05423.webp",
+    "DSC05450.webp",
+    "DSC05457.webp",
+    "DSC05482.webp",
+    "DSC05502.webp",
+    "DSC05538.webp",
+    "DSC05637.webp",
+    "DSC05650.webp",
+    "DSC05751.webp",
+    "DSC05761.webp",
+    "IMG_8172.webp"
   ];
   
     // get the last used image from local storage
